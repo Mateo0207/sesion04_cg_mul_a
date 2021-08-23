@@ -8,23 +8,38 @@ body{
     justify-content:center;
     }
     
-    .caja{
-    margin:150px 15px;
-    width:150px;
-    heihgt:150px;
-    background:crimson;
-    color:#fff;
-    font-size:40px;
-    text-align:center;
-    line-height:150px;
-    transition: all 1s;
-    }
+.caja{
+    margin: 150px 15px;
+    width: 150px;
+    height: 150px;
+    background: crimson;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 150px;
+    transition: all 2s;
+}
     
-    .caja:nth-child(1){
-    background:purple;
-    
-    }
     
     .caja:nth-child(1):hover{
-    transf
+    background:purple;
+    transform: translate(100px, 100px);
+    
+    
+}
+.caja:nth-child(2):hover{
+    background: yellow;
+    transform:rotate(50deg);
+}
+    
+    .caja:nth-child(3):hover{
+        background: green;
+        transform: scaleX(5);
+        transform: scaleY(5);
+    }
+     
+    .caja:nth-child(4):hover{
+        background: blue;
+        transform: skew(20deg);
+        
     }

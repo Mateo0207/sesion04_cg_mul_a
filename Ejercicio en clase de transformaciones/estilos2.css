@@ -8,36 +8,107 @@ body{
     justify-content:center;
     }
     
-.triangulo{
+.triangulo{ 
+    margin: 150px 40px;
     width: 0;
     height: 0;
-    border-left: 100px solid #f0ad4e;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 0px;    
+    border-left: 100px solid red;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
     transition: all 2s;
 }
     
+.trapecio{
+    margin: 150px 40px;
+    width: 100px;
+    height: 0px;
+    color: #fff;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid orange;
+    transition: all 2s ;
+
+}
+
+.circulo{
+    margin: 150px 40px;
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:rgb(3, 217, 255);
+    transition: all 2s;
+
+}
+
+.rombo{
+     margin: 150px 40px;
+    width: 100px; 
+     height: 100px; 
+     color: #fff;
+     font-size: 20px;
+    text-align:justify;
+    line-height: 0px;
+     background: greenyellow; 
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+     transition: all 2s;
+}
+
     
 .triangulo:nth-child(1):hover{
-    background:pink;
-
-    transform: translate(100px, 100px);
+    
+    border-left: 100px solid blue;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    transform: translate(0px,-100px);
+    
     
     
 }
 .trapecio:nth-child(2):hover{
-    background: yellow;
-    transform:rotate(50deg);
+    width: 100px;
+    height: 0px;
+    color:#fff;
+
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid lime;
+    transform: rotate(180deg);
+
 }
     
-    .circulo:nth-child(3):hover{
-        background: green;
-        transform: scaleX(5);
-        transform: scaleY(5);
-    }
-     
-    .rombo:nth-child(4):hover{
-        background: blue;
-        transform: skew(20deg);
+.circulo:nth-child(3):hover{
+    width: 80px;
+    height: 80px;
+    -moz-border-radius: 80%;
+    -webkit-border-radius: 50%;
+    border-radius: 80%;
+    background:fuchsia;
+    transform: scale(2, 2);
         
+
+ }
+     
+.rombo:nth-child(4):hover{
+     width: 100px; 
+     height: 100px; 
+     border: 3px;
+     background: green; 
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+     transform: skewY(50deg);
+             
     }
